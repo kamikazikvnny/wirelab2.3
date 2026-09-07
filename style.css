@@ -81,30 +81,46 @@ button {
     gap: 8px;
 }
 
-/* =========================================================
-   MOBILE NAVIGATION
-========================================================= */
-
 @media (max-width: 768px) {
 
     .site-header {
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 12px;
+        gap: 8px;
+        padding: 10px 8px;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
     }
 
     .site-header h1 {
-        text-align: center;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .site-header p {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .stage-label {
+        font-size: 12px;
+        white-space: nowrap;
     }
 
     .site-navigation {
+        order: 3;
+        width: 100%;
         display: flex;
         align-items: center;
         gap: 4px;
         flex-wrap: nowrap;
         overflow-x: auto;
-        width: 100%;
         justify-content: flex-start;
     }
 
@@ -115,7 +131,6 @@ button {
     }
 
 }
-
 .nav-button {
     display: inline-block;
     padding: 8px 12px;
