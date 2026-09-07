@@ -1692,10 +1692,11 @@ button {
 
 @media (max-width: 850px) {
     body.lab-page {
-        height: 100vh;
-        overflow: hidden;
-        overscroll-behavior: none;
-        touch-action: none;
+        min-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        overscroll-behavior-y: auto;
+        touch-action: auto;
     }
 
     #workboard,
