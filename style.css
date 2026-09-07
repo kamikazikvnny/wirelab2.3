@@ -81,6 +81,28 @@ button {
     gap: 8px;
 }
 
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .site-navigation {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .nav-button {
+        flex-shrink: 0;
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+
+}
+
 .nav-button {
     display: inline-block;
     padding: 8px 12px;
